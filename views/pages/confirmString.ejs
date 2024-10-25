@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <%- include('../components/header.ejs'); %>
+    </head>
+    <body class="container">
+      <div class="app-container">
+        <form action="/checkRandomString" method="post">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h3 class="card-title mb-3">Confirm OTP</h3>
+              <div class="mb-4">
+                <label for="otp" class="form-label">OTP</label>
+                <input type="text" class="form-control" name="otp" id="otp" placeholder="Enter String">
+              </div>
+              <div class="d-grid">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+    </div>
+        <footer>
+        <%- include('../components/footer.ejs'); %>
+        </footer>
+
+    </body>
+</html>
+
